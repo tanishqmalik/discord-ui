@@ -10,9 +10,7 @@
     margin:0;
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-
 }
-
 .logo{
     position: relative;
     top:3px;
@@ -38,6 +36,11 @@
         font-size: 14px;
         cursor: pointer;
         font-weight: bold;
+    }
+
+    button:hover{
+        color:#5865f2;
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
     }
 
     #menu{
@@ -92,6 +95,8 @@
             position: absolute;
             right:55px;
         }
+
+
     }
 }
 
@@ -208,6 +213,17 @@ h1 {
         color: white;
     }
 }
+
+#section1-button1:hover{
+    color:#5865f2;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+#section1-button2:hover{
+    background-color:rgb(50, 50, 50);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
 
 
 @media screen and (max-width:1600px){
@@ -347,3 +363,74 @@ h1 {
         }
     }
 }
+
+.section2{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:150px 0 150px;
+    padding-right: 80px;
+    padding-left: 40px;
+
+    .section2-image1{
+        padding: 10px;
+        width: auto;
+
+        #sec2-img2{
+            width: 85%;
+        }
+    }
+
+    .main-content2{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        .section2-heading{
+            width: auto;
+            font-size: 48px;
+            line-height: 50px;
+            text-align: start;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .section2-paragraph{
+            padding-top: 20px;
+            font-size: 20px;
+            font-weight: 250;
+            display:flex;
+            flex-direction: column;
+            p{
+                padding-top: 5px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:1000px){
+    .section2{
+        flex-direction: column;
+        padding: 0px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
+        height: 80vh;
+    }
+
+    .main-content2{
+        width: auto;
+        .section2-heading{
+            width: auto;
+            flex-direction: row;
+            font-size: 24px;
+        }
+
+        .section2-paragraph{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
