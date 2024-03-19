@@ -110,7 +110,8 @@
     margin: 0 auto;
     position: relative;
     background-color: #404eed;
-    height: 61vh;
+    /* height: 61vh; */
+    height: 56vh;
     width: 100%;
     background-image: url(assets/Image0.svg);
     background-repeat: no-repeat;
@@ -355,7 +356,6 @@ h1 {
 
 @media screen and (max-width:447px) {
     .section1{
-
         height: auto;
         #section1-image2{
             height: 220px;
@@ -365,72 +365,86 @@ h1 {
 }
 
 .section2{
-    height: 70vh;
+    height: 65vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding:150px 0 150px;
-    padding-right: 80px;
-    padding-left: 40px;
+}
+.section2-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    .section2-image1{
-        padding: 10px;
-        width: auto;
+    .section2-img{
+        width: 60%;
 
         #sec2-img2{
-            width: 85%;
+            width: 90%;
         }
     }
-
-    .main-content2{
+}
+.main-content2{
+    display: flex;
+    flex-direction: column;
+    .section2-heading{
         width: auto;
-        display: flex;
-        flex-direction: column;
-        .section2-heading{
-            width: auto;
-            font-size: 48px;
-            line-height: 50px;
-            text-align: start;
-            display: flex;
-            flex-direction: column;
-        }
+        height: auto;
+        font-size: 48px;
+        line-height: 48px;
+        margin-bottom: 18px;
+    }
+    .section2-paragraph{
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
 
-        .section2-paragraph{
-            padding-top: 20px;
-            font-size: 20px;
-            font-weight: 250;
-            display:flex;
-            flex-direction: column;
-            p{
-                padding-top: 5px;
-                line-height: 24px;
-            }
+@media screen and (max-width:930px){
+
+    .section2-center{
+        flex-direction: column;
+
+        .section2-img{
+            width:80%;
         }
     }
 }
 
+@media screen and (max-width:632px){
 
-@media screen and (max-width:1000px){
     .section2{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .section2-center{
         flex-direction: column;
-        padding: 0px 0px 0px 0px;
-        margin: 0px 0px 0px 0px;
-        height: 80vh;
+
+        .section2-img{
+            width:90%;
+        }
     }
 
     .main-content2{
-        width: auto;
         .section2-heading{
-            width: auto;
-            flex-direction: row;
             font-size: 24px;
+            line-height: 24px;
         }
-
         .section2-paragraph{
-            display: flex;
-            flex-direction: column;
+            font-size: 17px;
+            line-height: 24px;
         }
     }
 }
+
+@media screen and (max-width:448px){
+    .section2-center{
+        .section2-img{
+            width:100%;
+        }
+    }
+}
+
+
 
